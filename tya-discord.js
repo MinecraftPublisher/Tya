@@ -1811,7 +1811,7 @@ client.on("message", msg => {
         msg.channel.send(
           "Sup guyz,i am tya. 👋 \nI am a chatbot 🤖 ,but you can count me as a user. 👨🏻\nSo i can chat with you in activated channels.\nI am currently in **" +
             client.guilds.cache.size +
-            "** Servers.\n```Commands i have are:\n_help => That's obvius,it shows help... 😐\n_leave => Make me leave your server 👻\n_support => Type the command to see...\n_servers => Get servers count\n_activate => to activate me\n_deactivate => to deactivate me\n_ping => Gives ya the ping latency and stuff\n_invite => Gives ya a link to lemme sneak into ur server```\nSo start enjoying me 😉" +
+            "** Servers.\n```Commands that i know are:\n_help => That's obvius,it shows help... 😐\n_leave => Make me leave your server 👻\n_support => Type the command to see...\n_servers => Get servers count\n_activate => to activate me\n_deactivate => to deactivate me\n_ping => Gives ya the ping latency and stuff\n_invite => Gives ya a link to lemme sneak into ur server```\nSo start enjoying me 😉" +
             "\nTya's discord: https://discord.gg/wXBQyD2"
         );
       } //LOL
@@ -1846,7 +1846,7 @@ client.on("message", msg => {
       //Get invite link
       else if (clean(msg.content.toLowerCase(), msg) == "_invite") {
         msg.channel.send(
-          "Use this link to add me to your server:\nhttps://discord.com/oauth2/authorize/?permissions=8&scope=bot&client_id=740242882887155867"
+          "Use this link to add me to your server:\nhttps://discord.com/oauth2/authorize/?permissions=8&scope=bot&client_id=740242882887155867\nMy discord: https://discord.gg/wXBQyD2"
         );
       }
       //DA REAL CODE
@@ -1854,7 +1854,7 @@ client.on("message", msg => {
         //Check if the user is teaching da bot
         if (fs.existsSync("teachers/" + msg.author)) {
           //Guy canceled learning
-          if (clean(msg.content.toLowerCase(), msg) == "Nothing") {
+          if (clean(msg.content.toLowerCase(), msg) == "nothing") {
             fs.unlink("teachers/" + msg.author, function(err) {
               if (err == null) {
                 msg.reply("Ohkay 🥺");
@@ -1914,14 +1914,14 @@ client.on("message", msg => {
         msg.reply("Only a true admin would be able to wake me up!");
       } else {
         fs.writeFile("activates/" + msg.channel.id, "Activated", function() {
-          msg.reply(
-            "Thanks for activating me! 😍 \nTya's discord: https://discord.gg/wXBQyD2"
-          );
+          msg.reply("Thanks for activating me! 😍");
         });
       }
     }
   }
 });
 //Login and stuff
-client.login("YOUR_TOKEN");
+client.login("NzQwMjQyODgyODg3MTU1ODY3.XymK6A.1UsXnkV1tKB2cO0cUynLaF0ZbN0");
+//Recall the bot so it won't turn off 😈
+https.get("https://tya-discord-bot.glitch.me");
 
