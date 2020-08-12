@@ -1,5 +1,5 @@
 #Tya<br>
-An nlp with open learnings<br><strong>Program.cs is C#,for telegram.tya-discord.js is Node.JS,for discord.</strong><br>
+An nlp with open learnings<br><strong>Program.cs is C#,for telegram.<br>tya-discord.js is Node.JS,for discord.</strong><br>
 <br>
 Commands for discord:<br>
 First use _activate to activate him<br>
