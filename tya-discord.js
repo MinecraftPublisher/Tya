@@ -1921,7 +1921,7 @@ client.on("message", msg => {
   }
 });
 //Login and stuff
-client.login("NzQwMjQyODgyODg3MTU1ODY3.XymK6A.1UsXnkV1tKB2cO0cUynLaF0ZbN0");
+client.login("YOUR_TOKEN_HERE");
 //Recall the bot so it won't turn off 😈
 https.get("https://tya-discord-bot.glitch.me");
 
